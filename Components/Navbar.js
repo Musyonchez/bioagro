@@ -44,7 +44,7 @@ const Navbar = () => {
         <div style={{ position: 'relative' }}>
           <FaBars style={menuIconStyles} onClick={toggleDropdown} />
           {isDropdownOpen && (
-            <div
+            <div className=' z-50'
               style={{
                       position: 'absolute',
                       paddingRight: '100px',

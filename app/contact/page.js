@@ -96,7 +96,7 @@ export const ContactUs = () => {
           placeholder='Enter message'
         />
       </div>
-      <button className='bg-green-700 p-3 rounded-full items-center' type='submit'>
+      <button className='bg-green-700 p-3 rounded-full items-center mb-10' type='submit'>
         Send Message&rarr;
       </button>
     </form>
