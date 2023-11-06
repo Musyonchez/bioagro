@@ -13,6 +13,10 @@ const Navbar = () => {
     setDropdownOpen(!isDropdownOpen);
   };
 
+  const closeDropdown = () => {
+    setDropdownOpen(false);
+  };
+
   const menuStyles = {
     display: 'flex',
     alignItems: 'center',
@@ -45,8 +49,7 @@ const Navbar = () => {
 
         <div
           style={{ position: 'relative' }}
-          onMouseEnter={toggleDropdown}
-          onMouseLeave={toggleDropdown}
+          onMouseLeave={closeDropdown} // Close the dropdown when leaving the icon
         >
           {/* If the dropdown is open, render the links */}
           {isDropdownOpen && (
@@ -54,7 +57,7 @@ const Navbar = () => {
               style={{
                 position: 'absolute',
                 top: '100%',
-                right: '0',
+                left: 0,
                 backgroundColor: '#fff',
                 border: '1px solid #ccc',
                 flexDirection: 'column',
@@ -93,3 +96,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
