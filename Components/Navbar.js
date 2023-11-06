@@ -1,58 +1,97 @@
 "use client"
-import React, { useState } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import {RiMenu3Line, RiCloseLine} from 'react-icons/ri'
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
 const Navbar = () => {
-
   const [toggleMenu, setToggleMenu] = useState(false);
 
+  // Define inline CSS styles
+  const navbarStyles = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: '0 10px',
+  };
+
+  const linkStyles = {
+    fontSize: '2rem',
+    color: '#000', // Use your desired color
+  };
+
+  const buttonStyles = {
+    height: '4rem',
+    width: '13rem',
+    fontSize: '2rem',
+    backgroundColor: '#33851a', // Use your desired color
+    color: '#000', // Use your desired color
+    padding: '0.5rem 1rem',
+    borderRadius: '50px',
+    marginRight: '1rem',
+  };
+
+  const closeMenuStyles = {
+    color: '#000',
+    fontSize: '1.5rem',
+  };
+
   return (
-     <div>
-      <div className='flex items-center lg:justify-evenly justify-between'>
+    <div>
+      <div style={navbarStyles}>
         <Link href="/">
-            <Image src = '/images/logo.png' alt="Logo" width={100} height={50} />
-        </Link> 
-        <div className="space-x-5 lg:flex flex-row font-semibold hidden">
-          <Link href="/" className= "text-2xl text-green-500"> Home</Link>
-          <Link href="/aboutus" className= "text-2xl hover:text-green-400"> About</Link>
-          <Link href="/V&F" className= "text-2xl hover:text-green-400"> V&F</Link>
-          <Link href="/dairy" className= "text-2xl hover:text-green-400"> Dairy</Link>
-          <Link href="/seedlings" className= "text-2xl hover:text-green-400"> Seedlings</Link>                    
-          <Link href="/projects" className= "text-2xl hover:text-green-400"> Projects</Link>
-          <Link href="/products" className= "text-2xl hover:text-green-400"> Products</Link>
-        </div>
-
-        <Link href = "/contact">
-        <button className="h-16 w-52 text-2xl hidden xl:block bg-green-500 text-green-900 py-2 px-4 rounded-full hover:bg-green-700 hover:text-green-100 mr-4">
-          Contact Us
-        </button>
+          <Image src="/images/logo.png" alt="Logo" width={100} height={50} />
         </Link>
-        <div className='relative flex lg:hidden z-30'>
-          {toggleMenu ?
-              <RiCloseLine color='#000' size={27} onClick={() => setToggleMenu(false)} />
-              :
-              <RiMenu3Line color='#000' size={27} onClick={() => setToggleMenu(true)} />
-        }
-        {toggleMenu && (
-        <div className="space-y-5 flex flex-col absolute right-0 my-20 px-5 bg-stone-200 shadow-2xl font-semibold z-30">
-          <Link href="/" className= "text-2xl text-green-500"> Home</Link>
-          <Link href="/aboutus" className= "text-2xl hover:text-green-400"> About</Link>
-          <Link href="/V&F" className= "text-2xl hover:text-green-400"> V&F</Link>
-          <Link href="/dairy" className= "text-2xl hover:text-green-400"> Dairy</Link>
-          <Link href="/seedlings" className= "text-2xl hover:text-green-400"> Seedlings</Link>                    
-          <Link href="/projects" className= "text-2xl hover:text-green-400"> Projects</Link>
-          <Link href="/products" className= "text-2xl hover:text-green-400"> Products</Link>
+        <div style={linkStyles} className="space-x-5 lg:flex flex-row font-semibold hidden">
+          <Link href="/" style={linkStyles}>
+            Home
+          </Link>
+          <Link href="/aboutus" style={linkStyles} className="hover:text-green-400">
+            About
+          </Link>
+          <Link href="/V&F" style={linkStyles} className="hover:text-green-400">
+            V&F
+          </Link>
+          <Link href="/dairy" style={linkStyles} className="hover:text-green-400">
+            Dairy
+          </Link>
+          <Link href="/seedlings" style={linkStyles} className="hover:text-green-400">
+            Seedlings
+          </Link>
+          <Link href="/projects" style={linkStyles} className="hover:text-green-400">
+            Projects
+          </Link>
+          <Link href="/products" style={linkStyles} className="hover:text-green-400">
+            Products
+          </Link>
         </div>
-        )}
+        <Link href="/contact">
+          <button style={buttonStyles} className=' max-lg:hidden'>
+            Contact Us
+          </button>
+        </Link>
+        <div className="relative flex lg:hidden z-30">
+          {toggleMenu ? (
+            <RiCloseLine style={closeMenuStyles} onClick={() => setToggleMenu(false)} />
+          ) : (
+            <RiMenu3Line style={closeMenuStyles} onClick={() => setToggleMenu(true)} />
+          )}
+          {toggleMenu && (
+            <div style={linkStyles} className="space-y-5 flex flex-col absolute right-0 my-20 px-5 bg-stone-200 shadow-2xl font-semibold z-30">
+              <Link href="/">Home</Link>
+              <Link href="/aboutus" className="hover:text-green-400">About</Link>
+              <Link href="/V&F" className="hover:text-green-400">V&F</Link>
+              <Link href="/dairy" className="hover:text-green-400">Dairy</Link>
+              <Link href="/seedlings" className="hover:text-green-400">Seedlings</Link>
+              <Link href="/projects" className="hover:text-green-400">Projects</Link>
+              <Link href="/products" className="hover:text-green-400">Products</Link>
+            </div>
+          )}
         </div>
-        </div>
-        <div className='h-1 w-5/6 mb-1 mx-auto bg-yellow-500 items-center justify-center flex' ></div>
-
       </div>
-    
-  )
-}
+      <div style={{ height: '1px', width: '83.33%', marginBottom: '1rem', marginLeft: '8.33%', backgroundColor: '#FFC300' }}></div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
