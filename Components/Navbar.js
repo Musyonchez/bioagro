@@ -12,7 +12,7 @@ const Navbar = () => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: '0 10px',
+    padding: '5px 10px',
   };
 
   const linkStyles = {
@@ -35,6 +35,7 @@ const Navbar = () => {
     color: '#000',
     fontSize: '1.5rem',
   };
+
 
   return (
     <div>
@@ -66,11 +67,11 @@ const Navbar = () => {
           </Link>
         </div>
         <Link href="/contact">
-          <button style={buttonStyles} className=' max-lg:hidden'>
+          <button className=' hidden lg:block' style={buttonStyles}>
             Contact Us
           </button>
         </Link>
-        <div className="relative flex lg:hidden z-30">
+        <div className="relative hidden max-lg:block z-30">
           {toggleMenu ? (
             <RiCloseLine style={closeMenuStyles} onClick={() => setToggleMenu(false)} />
           ) : (
@@ -89,7 +90,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <div style={{ height: '1px', width: '83.33%', marginBottom: '1rem', marginLeft: '8.33%', backgroundColor: '#FFC300' }}></div>
+      <div style={{ height: '3px', width: '83.33%', marginBottom: '1rem', marginLeft: '8.33%', backgroundColor: '#FFC300' }}></div>
     </div>
   );
 };
