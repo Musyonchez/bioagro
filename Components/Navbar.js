@@ -9,8 +9,8 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-     <>
-      <div className='flex items-center lg:justify-evenly justify-between mx-10 my-10'>
+     <div className=" flex mx-10 my-10">
+      <div className='flex items-center lg:justify-evenly justify-between'>
         <Link href="/">
             <Image src = '/images/logo.png' alt="Logo" width={100} height={50} />
         </Link> 
@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
 
         <Link href = "/contact">
-        <button className="h-16 w-52 text-2xl hidden xl:block bg-green-500 text-green-900 py-2 px-4 rounded-full hover:bg-green-700 hover:text-green-100 mr-4">
+        <button className="h-16 w-52 text-2xl hidden xl:block bg-green-500 text-green-900 py-2 px-4 py-3 rounded-full hover:bg-green-700 hover:text-green-100 mr-4">
           Contact Us
         </button>
         </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
         <div className='h-1 w-5/6 mb-1 mx-auto bg-yellow-500 items-center justify-center flex' ></div>
 
-      </>
+      </div>
     
   )
 }
