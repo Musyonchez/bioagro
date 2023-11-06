@@ -60,7 +60,24 @@ const Navbar = () => {
               <Link href="/aboutus" style={linkStyles} className="hover:text-green-400">
                 About
               </Link>
-              {/* Add other links here */}
+             <Link href="/V&F" style={linkStyles} className="hover:text-green-400">
+                V&F
+              </Link>
+              <Link href="/dairy" style={linkStyles} className="hover:text-green-400">
+                Dairy
+              </Link>
+              <Link href="/seedlings" style={linkStyles} className="hover:text-green-400">
+                Seedlings
+              </Link>
+              <Link href="/projects" style={linkStyles} className="hover:text-green-400">
+                Projects
+              </Link>
+              <Link href="/products" style={linkStyles} className="hover:text-green-400">
+                Products
+              </Link>
+              <Link href="/contact" style={linkStyles} className="hover:text-green-400">
+                Contact
+              </Link>
             </div>
           )}
         </div>
