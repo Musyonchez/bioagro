@@ -78,7 +78,7 @@ const Navbar = () => {
             <RiMenu3Line style={closeMenuStyles} onClick={() => setToggleMenu(true)} />
           )}
           {toggleMenu && (
-            <div style={linkStyles} className="space-y-5 flex flex-col absolute right-0 my-20 px-5 bg-stone-200 shadow-2xl font-semibold z-30">
+            <div style="right: 0;font-size: 2rem;color: rgb(0, 0, 0);" className="space-y-5 flex flex-col absolute right-0 my-20 p-10 bg-stone-200 shadow-2xl font-semibold z-30">
               <Link href="/">Home</Link>
               <Link href="/aboutus" className="hover:text-green-400">About</Link>
               <Link href="/V&F" className="hover:text-green-400">V&F</Link>
