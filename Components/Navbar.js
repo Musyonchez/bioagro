@@ -54,10 +54,11 @@ const Navbar = () => {
               style={{
                 position: 'absolute',
                 top: '100%',
-                left: 0,
+                right: '0',
                 backgroundColor: '#fff',
                 border: '1px solid #ccc',
                 flexDirection: 'column',
+                height; '100vh',
               }}
             >
               <Link href="/" style={linkStyles}>
