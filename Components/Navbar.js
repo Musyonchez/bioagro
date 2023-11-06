@@ -1,6 +1,5 @@
 "use client"
 
-
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -11,10 +10,6 @@ const Navbar = () => {
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
-  };
-
-  const closeDropdown = () => {
-    setDropdownOpen(false);
   };
 
   const menuStyles = {
@@ -45,19 +40,15 @@ const Navbar = () => {
         </Link>
 
         {/* Hamburger Menu Icon */}
-        <FaBars style={menuIconStyles} onClick={toggleDropdown} />
-
-        <div
-          style={{ position: 'relative' }}
-          onMouseLeave={closeDropdown} // Close the dropdown when leaving the icon
-        >
-          {/* If the dropdown is open, render the links */}
+        <div style={{ position: 'relative' }}>
+          <FaBars style={menuIconStyles} onClick={toggleDropdown} />
           {isDropdownOpen && (
             <div
               style={{
                 position: 'absolute',
                 top: '100%',
-                left: 0,
+                left: '50%', // Center the dropdown
+                transform: 'translateX(-50%)', // Center the dropdown
                 backgroundColor: '#fff',
                 border: '1px solid #ccc',
                 flexDirection: 'column',
@@ -69,24 +60,7 @@ const Navbar = () => {
               <Link href="/aboutus" style={linkStyles} className="hover:text-green-400">
                 About
               </Link>
-              <Link href="/V&F" style={linkStyles} className="hover:text-green-400">
-                V&F
-              </Link>
-              <Link href="/dairy" style={linkStyles} className="hover:text-green-400">
-                Dairy
-              </Link>
-              <Link href="/seedlings" style={linkStyles} className="hover:text-green-400">
-                Seedlings
-              </Link>
-              <Link href="/projects" style={linkStyles} className="hover:text-green-400">
-                Projects
-              </Link>
-              <Link href="/products" style={linkStyles} className="hover:text-green-400">
-                Products
-              </Link>
-              <Link href="/contact" style={linkStyles} className="hover:text-green-400">
-                Contact
-              </Link>
+              {/* Add other links here */}
             </div>
           )}
         </div>
@@ -96,4 +70,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
