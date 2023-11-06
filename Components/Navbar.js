@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-     <div className=" flex mx-10 my-10">
+     <div>
       <div className='flex items-center lg:justify-evenly justify-between'>
         <Link href="/">
             <Image src = '/images/logo.png' alt="Logo" width={100} height={50} />
@@ -21,7 +21,6 @@ const Navbar = () => {
           <Link href="/dairy" className= "text-2xl hover:text-green-400"> Dairy</Link>
           <Link href="/seedlings" className= "text-2xl hover:text-green-400"> Seedlings</Link>                    
           <Link href="/projects" className= "text-2xl hover:text-green-400"> Projects</Link>
-          <Link href="/contact" className= "text-2xl hover:text-green-400 hidden"> Reviews</Link>
           <Link href="/products" className= "text-2xl hover:text-green-400"> Products</Link>
         </div>
 
@@ -44,7 +43,6 @@ const Navbar = () => {
           <Link href="/dairy" className= "text-2xl hover:text-green-400"> Dairy</Link>
           <Link href="/seedlings" className= "text-2xl hover:text-green-400"> Seedlings</Link>                    
           <Link href="/projects" className= "text-2xl hover:text-green-400"> Projects</Link>
-          <Link href="/contact" className= "text-2xl hover:text-green-400 hidden"> Reviews</Link>
           <Link href="/products" className= "text-2xl hover:text-green-400"> Products</Link>
         </div>
         )}
