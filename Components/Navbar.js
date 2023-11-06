@@ -55,7 +55,8 @@ const Navbar = () => {
             Projects
           </Link>
           <Link href="/products" style={linkStyles} className="hover:text-green-400">
-            Products
+            Productsgit checkout -b new-branch-name
+
           </Link>
           <Link href="/contact" style={linkStyles} className="hover:text-green-400">
             Contact
