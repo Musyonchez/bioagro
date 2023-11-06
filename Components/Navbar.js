@@ -25,11 +25,11 @@ const Navbar = () => {
         </div>
 
         <Link href = "/contact">
-        <button className="h-16 w-52 text-2xl hidden xl:block bg-green-500 text-green-900 py-2 px-4 py-3 rounded-full hover:bg-green-700 hover:text-green-100 mr-4">
+        <button className="h-16 w-52 text-2xl hidden xl:block bg-green-500 text-green-900 py-2 px-4 rounded-full hover:bg-green-700 hover:text-green-100 mr-4">
           Contact Us
         </button>
         </Link>
-        <div className='relative flex lg:hidden'>
+        <div className='relative flex lg:hidden z-30'>
           {toggleMenu ?
               <RiCloseLine color='#000' size={27} onClick={() => setToggleMenu(false)} />
               :
