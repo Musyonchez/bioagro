@@ -43,7 +43,7 @@ const Navbar = () => {
         <div style={{ position: 'relative' }}>
           <FaBars style={menuIconStyles} onClick={toggleDropdown} />
           {isDropdownOpen && (
-            <div
+            <div className = 'flex'
               style={{
                 position: 'absolute',
                 top: '100%',
