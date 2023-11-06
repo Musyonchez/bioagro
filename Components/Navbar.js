@@ -44,18 +44,20 @@ const Navbar = () => {
         <div style={{ position: 'relative' }}>
           <FaBars style={menuIconStyles} onClick={toggleDropdown} />
           {isDropdownOpen && (
-            <div className=' p-10 z-30'
+            <div
               style={{
-                position: 'absolute',
-                top: '100%',
-                left: '50%', // Center the dropdown
-                transform: 'translateX(-50%)', // Center the dropdown
-                backgroundColor: '#fff',
-                border: '1px solid #ccc',
-                flexDirection: 'column',
-                display: 'flex',
-              }}
-            >
+                      position: 'absolute',
+                      paddingRight: '100px',
+                      paddingLeft: '20px',
+                      marginTop: '30px',
+                      marginRight: '30px',
+                      transform: 'translateX(-50%)',
+                      backgroundColor: 'rgb(255, 255, 255)',
+                      border: '1px solid rgb(204, 204, 204)',
+                      flexDirection: 'column',
+                      display: 'flex',
+                    }}
+              >
               <Link href="/" style={linkStyles}>
                 Home
               </Link>
