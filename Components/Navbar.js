@@ -43,7 +43,7 @@ const Navbar = () => {
         <div style={{ position: 'relative' }}>
           <FaBars style={menuIconStyles} onClick={toggleDropdown} />
           {isDropdownOpen && (
-            <div className = 'flex'
+            <div
               style={{
                 position: 'absolute',
                 top: '100%',
@@ -52,6 +52,7 @@ const Navbar = () => {
                 backgroundColor: '#fff',
                 border: '1px solid #ccc',
                 flexDirection: 'column',
+                display: 'flex',
               }}
             >
               <Link href="/" style={linkStyles}>
