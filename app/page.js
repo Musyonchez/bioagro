@@ -3,6 +3,7 @@ import React from 'react';
 import './globals.css';
 import Link from 'next/link';
 
+
 const Page = () => {
   const backgroundStyles = {
     backgroundColor: 'rgba(255, 255, 255, 0.5)',
@@ -28,15 +29,11 @@ const Page = () => {
 
             Have questions or want to learn more? Feel free to contact us, and we'll be happy to assist you on your journey to healthier living.
           </p>
-          <div className="justify-between items-center mx-auto space-x-5">
-            <Link href="/contact">
-              <a className="bg-green-500 h-20 w-60 rounded-3xl text-2xl mb-14">
-                Learn More <span>&rarr;</span>
-              </a>
+          <div className=" flex flex-row justify-evenly items-center mx-auto mb-14 space-x-5">
+            <Link href="/contact" className=" items-center bg-green-500 h-20 w-60 rounded-3xl text-2xl flex justify-center">
+              Learn More <span>&rarr;</span>
             </Link>
-            <Link href="/contact">
-              <a className="bg-white h-20 w-52 rounded-3xl text-2xl">Contact Us</a>
-            </Link>
+            <Link href="/contact" className=" items-center bg-white h-20 w-52 rounded-3xl text-2xl flex justify-center">Contact Us</Link>
           </div>
         </div>
       </div>
