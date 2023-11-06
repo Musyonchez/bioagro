@@ -56,6 +56,7 @@ const Navbar = () => {
                       border: '1px solid rgb(204, 204, 204)',
                       flexDirection: 'column',
                       display: 'flex',
+                      z-index: 50;
                     }}
               >
               <Link href="/" style={linkStyles}>
