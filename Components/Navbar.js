@@ -10,11 +10,10 @@ const Navbar = () => {
 
   return (
      <>
-      <div className='flex items-center lg:justify-evenly justify-between mr-5'>
+      <div className='flex items-center lg:justify-evenly justify-between mx-10 my-10'>
         <Link href="/">
             <Image src = '/images/logo.png' alt="Logo" width={100} height={50} />
         </Link> 
-
         <div className="space-x-5 lg:flex flex-row font-semibold hidden">
           <Link href="/" className= "text-2xl text-green-500"> Home</Link>
           <Link href="/aboutus" className= "text-2xl hover:text-green-400"> About</Link>
