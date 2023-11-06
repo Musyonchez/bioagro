@@ -58,7 +58,6 @@ const Navbar = () => {
                 backgroundColor: '#000',
                 border: '1px solid #ccc',
                 flexDirection: 'column',
-                height; '100vh',
               }}
             >
               <Link href="/" style={linkStyles}>
