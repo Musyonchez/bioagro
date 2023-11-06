@@ -1,5 +1,6 @@
 "use client"
 
+"use client"
 
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -41,23 +42,19 @@ const Navbar = () => {
         </Link>
 
         {/* Hamburger Menu Icon */}
-        <FaBars style={menuIconStyles} onClick={toggleDropdown} />
-
-        <div
-          style={{ position: 'relative' }}
-          onMouseEnter={toggleDropdown}
-          onMouseLeave={toggleDropdown}
-        >
-          {/* If the dropdown is open, render the links */}
+        <div style={{ position: 'relative' }}>
+          <FaBars style={menuIconStyles} onClick={toggleDropdown} />
           {isDropdownOpen && (
-            <div
+            <div className=' p-10 z-30'
               style={{
                 position: 'absolute',
                 top: '100%',
-                right: '0',
-                backgroundColor: '#000',
+                left: '50%', // Center the dropdown
+                transform: 'translateX(-50%)', // Center the dropdown
+                backgroundColor: '#fff',
                 border: '1px solid #ccc',
                 flexDirection: 'column',
+                display: 'flex',
               }}
             >
               <Link href="/" style={linkStyles}>
@@ -66,7 +63,7 @@ const Navbar = () => {
               <Link href="/aboutus" style={linkStyles} className="hover:text-green-400">
                 About
               </Link>
-              <Link href="/V&F" style={linkStyles} className="hover:text-green-400">
+             <Link href="/V&F" style={linkStyles} className="hover:text-green-400">
                 V&F
               </Link>
               <Link href="/dairy" style={linkStyles} className="hover:text-green-400">
