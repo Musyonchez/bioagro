@@ -55,7 +55,7 @@ const Navbar = () => {
                 position: 'absolute',
                 top: '100%',
                 right: '0',
-                backgroundColor: '#000',
+                backgroundColor: '#fff',
                 border: '1px solid #ccc',
                 flexDirection: 'column',
               }}
