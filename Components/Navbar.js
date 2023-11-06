@@ -11,9 +11,7 @@ import Image from 'next/image';
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
+
 
   const menuStyles = {
     display: 'flex',
@@ -62,27 +60,12 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <div className="lg:hidden">
-          <button onClick={toggleMobileMenu}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-      {isMobileMenuOpen && (
-        <div className="lg:hidden z-20">
+
+
+
+
+
+        <div className=" ">
           <div
             style={{
               border: '1px solid #ccc',
@@ -118,7 +101,7 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
