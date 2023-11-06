@@ -1,5 +1,6 @@
 "use client"
 
+
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -43,7 +44,7 @@ const Navbar = () => {
         <div style={{ position: 'relative' }}>
           <FaBars style={menuIconStyles} onClick={toggleDropdown} />
           {isDropdownOpen && (
-            <div
+            <div className=' p-10 z-30'
               style={{
                 position: 'absolute',
                 top: '100%',
