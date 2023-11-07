@@ -15,7 +15,7 @@ const Page = () => {
   return (
     <div className="h-screen overflow-x-hidden" style={backgroundStyles}>
       <Testing />
-      <div className="items-center justify-center my-20 flex flex-col">
+      <div className="items-center justify-center mt-40 mb-20 flex flex-col">
         <div className="h-1 w-44 bg-yellow-500 items-center justify-center mt-1 flex"></div>
         <div className="w-11/12 lg:w-1/2 mx-auto backdrop-blur-md space-y-10 text-center">
           <h1 className="font-extrabold text-3xl">Organic food from the ground to your table</h1>
