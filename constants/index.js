@@ -22,46 +22,55 @@ export const vegetables = [
         img: tomatoes1,
         cta: "Learn More",
         id: "Tomatoes",
+        url: "products/tomatoes",
     },
     {
         img: kales1,
         cta: "Learn More",
         id: "Kales",
+        url: "products/kales",
     },
     {
         img: cabbages1,
         cta: "Learn More",
         id: "Cabbage",
+        url: "products/cabbages",
     },
     {
         img: capsicum1,
         cta: "Learn More",
         id: "Capsicum",
+        url: "products/capsicum",
     },
     {
         img: spinach3,
         cta: "Learn More",
         id: "Spinach",
+        url: "products/spinach",
     },
     {
         img: maize1,
         cta: "Learn More",
         id: "Maize",
+        url: "products/maize",
     },
     {
         img: french_beans1,
         cta: "Learn More",
         id: "French_beans",
+        url: "products/french_beans",
     },
     {
         img: onions1,
         cta: "Learn More",
         id: "Onions",
+        url: "products/onions",
     },
     {
         img: cow_peas1,
         cta: "Learn More",
         id: "Cow_peas",
+        url: "products/cow_peas",
     },
 ];
 
@@ -71,26 +80,31 @@ export const fruits = [
         img: mangoes4,
         cta: "Learn More",
         id: "Mangoes",
+        url: "products/mangoes",
     },
     {
         img: pawpaws1,
         cta: "Learn More",
         id: "pawpaws",
+        url: "products/pawpaws",
     },
     {
         img: oranges1,
         cta: "Learn More",
         id: "Oranges",
+        url: "products/oranges",
     },
     {
         img: bananas1,
         cta: "Learn More",
         id: "Bananas",
+        url: "products/bananas",
     },
     {
         img: avocado4,
         cta: "Learn More",
         id: "Avocado",
+        url: "products/avocado",
     },
 ];
 
@@ -99,6 +113,7 @@ export const seedlings = [
         img: seedlings1,
         cta: "Learn More",
         id: "Seedlings",
+        url: "products/seedlings",
     },
 ];
 
@@ -107,5 +122,6 @@ export const milk = [
         img: milk1,
         cta: "Learn More",
         id: "Milk",
+        url: "products/milk",
     },
 ];

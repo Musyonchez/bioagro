@@ -25,10 +25,10 @@ const page = () => {
                                     key={mil.id}
                                     className=' list-none'
                                 >
-                                    <Link href="/products">
+                                    <Link href="/mil.url">
                                         <Image src = {mil.img} alt="Logo" className=' h-full w-3/5  mx-auto' />
                                     </Link> 
-                                    <Link href = "/contact">
+                                    <Link href = "/mil.url">
                                         <button className="bg-green-500 h-14 w-48 rounded-3xl text-2xl my-3">
                                             Learn More <span>&rarr;</span>
                                         </button>
@@ -52,10 +52,10 @@ const page = () => {
                                     key={seed.id}
                                     className=' list-none'
                                 >
-                                    <Link href="/products">
+                                    <Link href="/seed.url">
                                         <Image src = {seed.img} alt="Logo" className=' h-full w-3/5 mx-auto' />
                                     </Link> 
-                                    <Link href = "/contact">
+                                    <Link href = "/seed.url">
                                         <button className="bg-green-500 h-14 w-48 rounded-3xl text-2xl my-3">
                                             Learn More <span>&rarr;</span>
                                         </button>
@@ -80,10 +80,10 @@ const page = () => {
                                     key={fruit.id}
                                     className=' list-none mx-auto mr-14 max-md:mr-0'
                                 >
-                                    <Link href="/products">
+                                    <Link href="/fruit.url">
                                         <Image src = {fruit.img} alt="Logo"  className=' h-80 w-60 max-auto' />
                                     </Link> 
-                                    <Link href = "/contact">
+                                    <Link href = "/fruit.url">
                                         <button className="bg-green-500 h-14 w-48 rounded-3xl text-2xl my-3">
                                             Learn More <span>&rarr;</span>
                                         </button>
@@ -107,10 +107,10 @@ const page = () => {
                                     key={veg.id}
                                     className=' list-none mx-auto mr-14 max-md:mr-0'
                                 >
-                                    <Link href="/products">
+                                    <Link href="/veg.url">
                                         <Image src = {veg.img} alt="Logo" className=' h-80 w-60 mx-auto' />
                                     </Link> 
-                                    <Link href = "/contact">
+                                    <Link href = "/veg.url">
                                         <button className="bg-green-500 h-14 w-48 rounded-3xl text-2xl my-3">
                                             Learn More <span>&rarr;</span>
                                         </button>
