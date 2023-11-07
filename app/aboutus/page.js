@@ -1,6 +1,7 @@
 import Navbar from '@/Components/Navbar'
 import '../../app/globals.css';
 import React from 'react'
+import Link from 'next/link';
 
 const page = () => {
 
