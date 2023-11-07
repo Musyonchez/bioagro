@@ -36,7 +36,7 @@ export const ContactUs = () => {
 
   return (
     <div className='h-screen w-screen'>
-      <Navbar className="" />
+      <Navbar className="z-10 mb-5" />
       <div className='text-lg bg-gray-50 items-center z-10 justify-center max-sm:h-full h-full lg:w-1/2 md:w-2/3 sm:w-2/3 max-sm:w-3/4 space-y-2.5 text-center max-sm:mx-auto' style={absoluteCenter}>
         <div className='h-1 w-32 bg-green-700 justify-center mx-auto'></div>
         <h1 className='text-yellow-500 font-extrabold text-xl'>Contact US</h1>
