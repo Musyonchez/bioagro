@@ -28,16 +28,16 @@ const Page = () => {
       <div className="bg-cover bg-center h-auto text-black flex items-center">
               
                 <ul className=' flex mb-0 justify-evenly items-center mx-auto flex-row mt-10 w-screen '>
-                                    <Link href= "/">
+                                    <Link href= "/" className=' lg:hidden'>
                                         <Image src = {avocado1} alt="Logo"  className=' h-80 w-60 max-auto' />
                                     </Link>
-                                    <Link href= "/">
+                                    <Link href= "/" className=' md:hidden'>
                                         <Image src = {avocado2} alt="Logo"  className=' h-80 w-60 max-auto' />
                                     </Link>
-                                    <Link href= "/">
+                                    <Link href= "/" className=' sm:hidden'>
                                         <Image src = {avocado3} alt="Logo"  className=' h-80 w-60 max-auto' />
                                     </Link> 
-                                    <Link href= "/">
+                                    <Link href= "/" className=''>
                                         <Image src = {avocado4} alt="Logo"  className=' h-80 w-60 max-auto' />
                                     </Link> 
                         </ul>
@@ -64,6 +64,27 @@ const Page = () => {
             </div>
         </div>
       </div>
+
+
+      <div className="bg-cover bg-center h-auto text-black flex items-center">
+              
+                <ul className=' flex mb-0 justify-evenly items-center mx-auto flex-col mt-10 w-screen '>
+                                    <Link href= "/" className=' hidden lg:block'>
+                                        <Image src = {avocado1} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    </Link>
+                                    <Link href= "/" className=' hidden md:block'>
+                                        <Image src = {avocado2} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    </Link>
+                                    <Link href= "/" className=' hidden sm:block'> 
+                                        <Image src = {avocado3} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    </Link> 
+                                    <Link href= "/" className=' hidden '>
+                                        <Image src = {avocado4} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    </Link> 
+                        </ul>
+      </div>
+
+
     </div>
   );
 };
