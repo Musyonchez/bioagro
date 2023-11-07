@@ -27,6 +27,16 @@ const page = () => {
             <p>
             When you visit Bioagro Solutions, you're not just choosing a source of exceptional farm-fresh produce; you're supporting a sustainable approach to agriculture. We invite you to join us in celebrating the joy of food, from our fields to your table, and to explore the possibilities of dairy milk and starting your garden with our quality seedlings. Come rain or shine, we're here to provide you with the best of what local agriculture has to offer.
             </p>
+            <div className="justify-between items-center mx-auto space-x-5">
+              <Link href = "/products">
+              <button className="bg-green-500 h-20 w-60 rounded-3xl text-2xl mb-14">
+                Products <span>&rarr;</span>
+              </button>
+              </Link>
+              <Link href = "/contact">
+                <button className=" border-4 border-green-500 bg-white h-20 w-52 rounded-3xl text-2xl">Contact Us</button>
+              </Link>
+            </div>
         </div>
       <div className=' h-screen w-screen flex-1 max-lg:hidden' style={backgroundStyles}></div>
       </div>

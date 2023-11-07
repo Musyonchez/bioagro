@@ -17,7 +17,7 @@ const Page = () => {
       <Testing />
       <div className="items-center justify-center mt-40 mb-20 flex flex-col">
         <div className="h-1 w-44 bg-yellow-500 items-center justify-center mt-1 flex"></div>
-        <div className="w-11/12 lg:w-1/2 mx-auto backdrop-blur-md space-y-10 text-center">
+        <div className="w-11/12 lg:w-1/2 mx-auto backdrop-blur-sm space-y-10 text-center">
           <h1 className="font-extrabold text-3xl">Organic food from the ground to your table</h1>
           <p className="font-bold text-2xl mx-auto w-11/12">
             Welcome to BioAgro, where we bring you the freshest and healthiest organic food straight from the farm to your table. Our commitment to quality and sustainability ensures that you enjoy the best nature has to offer.
