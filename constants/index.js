@@ -15,6 +15,22 @@ import {seedlings1} from "../public/images/cards/seedlings"
 import {spinach3} from "../public/images/cards/spinach"
 import {tomatoes1} from "../public/images/cards/tomatoes"
 
+const tomatoes = '/products/tomatoes';
+const kales = '/products/kales';
+const cabbage = '/products/cabbages';
+const capsicum = '/products/capsicum';
+const spinach = '/products/spinach';
+const maize = '/products/maize';
+const french_beans = '/products/french_beans';
+const onions = '/products/onions';
+const cow_peas = '/products/cow_peas';
+const mangoes = '/products/mangoes';
+const pawpaws = '/products/pawpaws';
+const oranges = '/products/oranges';
+const bananas = '/products/bananas';
+const avocado = '/products/avocado';
+const seedling = '/products/seedlings';
+const milk = '/products/milk';
 
 
 export const vegetables = [
@@ -22,55 +38,55 @@ export const vegetables = [
         img: tomatoes1,
         cta: "Learn More",
         id: "Tomatoes",
-        url: "products/tomatoes",
+        url: tomatoes,
     },
     {
         img: kales1,
         cta: "Learn More",
         id: "Kales",
-        url: "products/kales",
+        url: kales,
     },
     {
         img: cabbages1,
         cta: "Learn More",
         id: "Cabbage",
-        url: "products/cabbages",
+        url: cabbage,
     },
     {
         img: capsicum1,
         cta: "Learn More",
         id: "Capsicum",
-        url: "products/capsicum",
+        url: capsicum,
     },
     {
         img: spinach3,
         cta: "Learn More",
         id: "Spinach",
-        url: "products/spinach",
+        url: spinach,
     },
     {
         img: maize1,
         cta: "Learn More",
         id: "Maize",
-        url: "products/maize",
+        url: maize,
     },
     {
         img: french_beans1,
         cta: "Learn More",
         id: "French_beans",
-        url: "products/french_beans",
+        url: french_beans,
     },
     {
         img: onions1,
         cta: "Learn More",
         id: "Onions",
-        url: "products/onions",
+        url: onions,
     },
     {
         img: cow_peas1,
         cta: "Learn More",
         id: "Cow_peas",
-        url: "products/cow_peas",
+        url: cow_peas,
     },
 ];
 
@@ -80,31 +96,31 @@ export const fruits = [
         img: mangoes4,
         cta: "Learn More",
         id: "Mangoes",
-        url: "products/mangoes",
+        url: mangoes,
     },
     {
         img: pawpaws1,
         cta: "Learn More",
         id: "pawpaws",
-        url: "products/pawpaws",
+        url: pawpaws,
     },
     {
         img: oranges1,
         cta: "Learn More",
         id: "Oranges",
-        url: "products/oranges",
+        url: oranges,
     },
     {
         img: bananas1,
         cta: "Learn More",
         id: "Bananas",
-        url: "products/bananas",
+        url: bananas,
     },
     {
         img: avocado4,
         cta: "Learn More",
         id: "Avocado",
-        url: "products/avocado",
+        url: avocado,
     },
 ];
 
@@ -113,15 +129,15 @@ export const seedlings = [
         img: seedlings1,
         cta: "Learn More",
         id: "Seedlings",
-        url: "products/seedlings",
+        url: seedling,
     },
 ];
 
-export const milk = [
+export const milks = [
     {
         img: milk1,
         cta: "Learn More",
         id: "Milk",
-        url: "products/milk",
+        url: milk,
     },
 ];

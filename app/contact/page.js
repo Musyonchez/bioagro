@@ -51,6 +51,7 @@ export const ContactUs = () => {
             id="form-firstName"
             name="first_name"
             placeholder='Enter firstname'
+            required
           />
         </div>
         <div className='flex flex-col space-y-2.5 max-sm:mt-5'>
@@ -61,6 +62,7 @@ export const ContactUs = () => {
             id="form-lastName"
             name="last_name"
             placeholder='Enter lastname'
+            required
           />
         </div>
       </div>
@@ -69,10 +71,11 @@ export const ContactUs = () => {
           <label htmlFor="form-phoneNumber">Phone Number</label>
           <input
             className='max-sm:w-3/4 mx-auto'
-            type="tel"
+            type="number"
             id="form-phoneNumber"
             name="phone_number"
             placeholder='Enter number'
+            required
           />
         </div>
         <div className='flex flex-col space-y-2.5'>
@@ -83,6 +86,7 @@ export const ContactUs = () => {
             id="form-email"
             name="email"
             placeholder='Enter email'
+            required
           />
         </div>
       </div>
@@ -95,6 +99,7 @@ export const ContactUs = () => {
           name="message"
           rows="6"
           placeholder='Enter message'
+          required
         />
       </div>
       <button className='bg-green-700 p-3 rounded-full items-center mb-10' type='submit'>
