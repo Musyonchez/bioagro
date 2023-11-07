@@ -1,68 +1,68 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import './navbar.css'; 
 const Navbar = () => {
   return (
     <div>
-      <div className='w-screen flex flex-row items-center justify-between px-10 max-sm:px-1'>
-      <Link href="/" >
-        <Image
-          src="/images/logo.png"
-          alt="Logo"
-          width= '250'
-          height= '100'
-          className="relative mb-2"
-        />
-      </Link>
-      <Link href="/" >
-        <button className=' bg-emerald-800 text-3xl text-white px-10 py-7 w-full rounded-3xl max-sm:hidden'>
-          Contact Us
-        </button>
-      </Link>
+      <div className='navbar-container'>
+        <Link href="/">
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            width='250'
+            height='100'
+            className="logo-image"
+          />
+        </Link>
+        <Link href="/">
+          <button className='contact-button'>
+            Contact Us
+          </button>
+        </Link>
       </div>
-      <div className=' w-screen bg-white'>
-      <ul className="w-full h-full flex flex-wrap gap-x-6 text-center justify-center items-center text-3xl py-5 text-black max-sm:justify-between max-sm:px-3">
-            <li>
-              <Link href="/aboutus"  className="hover:text-green-400">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/V&F"  className="hover:text-green-400">
-                V&F
-              </Link>
-            </li>
-            <li>
-              <Link href="/dairy"  className="hover:text-green-400">
-                Dairy
-              </Link>
-            </li>
-            <li>
-              <Link href="/seedlings"  className="hover:text-green-400">
-                Seedlings
-              </Link>
-            </li>
-            <li>
-              <Link href="/projects"  className="hover:text-green-400">
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link href="/products"  className="hover:text-green-400">
-                Products
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact"  className="hover:text-green-400">
-                Contact
-              </Link>
-            </li>
-          </ul>
+      <div className='menu-container'>
+        <ul className="menu">
+          <li>
+            <Link href="/aboutus" className="menu-link">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/V&F" className="menu-link">
+              V&F
+            </Link>
+          </li>
+          <li>
+            <Link href="/dairy" className="menu-link">
+              Dairy
+            </Link>
+          </li>
+          <li>
+            <Link href="/seedlings" className="menu-link">
+              Seedlings
+            </Link>
+          </li>
+          <li>
+            <Link href="/projects" className="menu-link">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link href="/products" className="menu-link">
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="menu-link">
+              Contact
+            </Link>
+          </li>
+        </ul>
       </div>
-      <div className=' bg-yellow-500 h-2 w-full'></div>
+      <div className='footer-bar'></div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
