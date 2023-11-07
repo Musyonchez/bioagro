@@ -78,7 +78,7 @@ const page = () => {
                             {fruits.map((fruit) => (
                                 <li 
                                     key={fruit.id}
-                                    className=' list-none mx-auto mr-14'
+                                    className=' list-none mx-auto mr-14 max-md:mr-0'
                                 >
                                     <Link href="/products">
                                         <Image src = {fruit.img} alt="Logo"  className=' h-80 w-60 max-auto' />
@@ -101,7 +101,7 @@ const page = () => {
             </div>
 
             <div className='flex justify-center items-center'>
-                <ul className='grid xl:grid-cols-4 lg:grid-cols-3 max-md:grid-cols-1 text-center mb-0 justify-center items-center mx-auto max-md:'>
+                <ul className='grid xl:grid-cols-4 lg:grid-cols-3 max-md:grid-cols-1 text-center mb-0 justify-center items-center mx-auto'>
                             {vegetables.map((veg) => (
                                 <li 
                                     key={veg.id}
