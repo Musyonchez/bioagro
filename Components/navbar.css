@@ -1,12 +1,13 @@
 /* Navbar.css */
 
-.navbar-container {
+    .navbar-container {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2.5rem;
+    background-color: transparent;
   }
   
   .logo-image {
@@ -14,7 +15,7 @@
   }
   
   .contact-button {
-    background-color: #34D399;
+    background-color: #059669;
     color: white;
     font-size: 3rem;
     padding: 1rem 2.5rem;
@@ -34,7 +35,7 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 3rem;
     padding: 1rem 2.5rem;
@@ -42,17 +43,26 @@
   }
   
   .menu-link {
-    color: #059669;
+    color: #000;
     transition: color 0.3s;
   }
   
   .menu-link:hover {
-    color: #34D399;
+    color: #0a9d67;
   }
   
   .footer-bar {
-    background-color: #FFD700;
-    height: 2px;
+    background-color: #f4d839;
+    height: 5px;
     width: 100%;
   }
   
+
+  @media (max-width: 640px) {
+    .contact-button {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.5rem;
+        width: 100%;
+        border-radius: 1rem;
+      }
+  }
