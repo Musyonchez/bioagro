@@ -29,7 +29,7 @@ export const ContactUs = () => {
 
   const absoluteCenter = {
     position: 'absolute',
-    top: '50%',
+    top: '90%',
     left: '30%',
     transform: 'translateX(-50%) translateY(-20%)',
   };
