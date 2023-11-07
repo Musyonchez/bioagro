@@ -27,16 +27,13 @@ export const ContactUs = () => {
     backgroundRepeat: 'no-repeat',
   };
 
-  const absoluteCenter = styled.div`
-  position: absolute;
-  top: 50px; /* Default value for larger screens */
-  left: 30%;
-  transform: translateX(-50%) translateY(-20%);
-
-  @media (max-width: 640px) {
-    top: 70px; /* Adjusted value for smaller screens */
-  }
-`;
+  const absoluteCenter = {
+    position: 'absolute',
+    top: '90%',
+    left: '30%',
+    transform: 'translateX(-50%) translateY(-20%)',
+  };
+  
 
   return (
     <div className='h-screen w-screen'>
