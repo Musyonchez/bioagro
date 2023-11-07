@@ -29,7 +29,7 @@ const Page = () => {
             Have questions or want to learn more? Feel free to contact us, and we'll be happy to assist you on your journey to healthier living.
           </p>
           <div className=" flex flex-row max-sm:flex-col justify-evenly items-center mx-auto mb-14 space-x-5">
-            <Link href="/contact" className=" my-10 items-center bg-green-500 h-20 w-60 rounded-3xl text-2xl flex justify-center">
+            <Link href="/aboutus" className=" my-10 items-center bg-green-500 h-20 w-60 rounded-3xl text-2xl flex justify-center">
               Learn More <span>&rarr;</span>
             </Link>
             <Link href="/contact" className=" my-10 items-center bg-white h-20 w-52 rounded-3xl text-2xl flex justify-center">Contact Us</Link>

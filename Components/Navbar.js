@@ -15,7 +15,7 @@ const Navbar = () => {
             className="logo-image"
           />
         </Link>
-        <Link href="/">
+        <Link href="/contact">
           <button className='contact-button'>
             Contact Us
           </button>
