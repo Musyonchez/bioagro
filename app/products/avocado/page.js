@@ -25,23 +25,23 @@ const Page = () => {
   return (
     <div>
       <Navbar />
-      <div className="bg-cover bg-center h-auto text-black flex items-center">
-              
-                <ul className=' flex mb-0 justify-evenly items-center mx-auto flex-row mt-10 w-screen flex-wrap'>
-                                    <Link href= "/" className=' lg:hidden'>
-                                        <Image src = {avocado1} alt="Logo"  className=' h-80 w-60 max-auto' />
-                                    </Link>
-                                    <Link href= "/" className=' md:hidden'>
-                                        <Image src = {avocado2} alt="Logo"  className=' h-80 w-60 max-auto' />
-                                    </Link>
-                                    <Link href= "/" className=' sm:hidden'>
-                                        <Image src = {avocado3} alt="Logo"  className=' h-80 w-60 max-auto' />
-                                    </Link> 
-                                    <Link href= "/" className=''>
-                                        <Image src = {avocado4} alt="Logo"  className=' h-80 w-60 max-auto' />
-                                    </Link> 
-                        </ul>
-      </div>
+      <div className="bg-cover bg-center h-auto text-black flex items-center border-black border-4 mx-1 mt-10 mb-1">
+            
+            <ul className=' flex justify-evenly items-center mx-auto flex-row w-screen my-10 flex-wrap'>
+                                <Link href= "/">
+                                    <Image src = {bananas1} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                </Link>
+                                <Link href= "/">
+                                    <Image src = {bananas2} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                </Link>
+                                <Link href= "/">
+                                    <Image src = {bananas3} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                </Link> 
+                                <Link href= "/">
+                                    <Image src = {bananas4} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                </Link> 
+                    </ul>
+  </div>
       <div className="flex flex-col lg:flex-row items-center my-10  w-1/2 mx-auto">
         <div className="flex-1 p-4 sm:p-14 space-y-5 sm:space-y-10 border-black border-4 mx-5">
         <h1 className="text-3xl">A Taste of Avocado Perfection</h1>
@@ -66,25 +66,23 @@ const Page = () => {
       </div>
 
 
-      <div className="bg-cover bg-center h-auto text-black flex items-center">
-              
-                <ul className=' flex mb-0 justify-evenly items-center mx-auto flex-col mt-10 w-screen flex-wrap '>
-                                    <Link href= "/" className=' hidden lg:block'>
-                                        <Image src = {avocado1} alt="Logo"  className=' h-80 w-60 max-auto' />
-                                    </Link>
-                                    <Link href= "/" className=' hidden md:block'>
-                                        <Image src = {avocado2} alt="Logo"  className=' h-80 w-60 max-auto' />
-                                    </Link>
-                                    <Link href= "/" className=' hidden sm:block'> 
-                                        <Image src = {avocado3} alt="Logo"  className=' h-80 w-60 max-auto' />
-                                    </Link> 
-                                    <Link href= "/" className=' hidden '>
-                                        <Image src = {avocado4} alt="Logo"  className=' h-80 w-60 max-auto' />
-                                    </Link> 
-                        </ul>
-      </div>
-
-
+      <div className="bg-cover bg-center h-auto text-black flex items-center border-black border-4 mx-1 mt-10 mb-1">
+            
+            <ul className=' flex justify-evenly items-center mx-auto flex-row w-screen my-10 flex-wrap '>
+                                <Link href= "/">
+                                    <Image src = {bananas1} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                </Link>
+                                <Link href= "/">
+                                    <Image src = {bananas2} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                </Link>
+                                <Link href= "/">
+                                    <Image src = {bananas3} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                </Link> 
+                                <Link href= "/">
+                                    <Image src = {bananas4} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                </Link> 
+                    </ul>
+  </div>
     </div>
   );
 };
