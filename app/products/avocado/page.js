@@ -27,7 +27,7 @@ const Page = () => {
       <Navbar />
       <div className="bg-cover bg-center h-auto text-black flex items-center">
               
-                <ul className=' flex mb-0 justify-evenly items-center mx-auto flex-row mt-10 w-screen '>
+                <ul className=' flex mb-0 justify-evenly items-center mx-auto flex-row mt-10 w-screen flex-wrap'>
                                     <Link href= "/" className=' lg:hidden'>
                                         <Image src = {avocado1} alt="Logo"  className=' h-80 w-60 max-auto' />
                                     </Link>
@@ -68,7 +68,7 @@ const Page = () => {
 
       <div className="bg-cover bg-center h-auto text-black flex items-center">
               
-                <ul className=' flex mb-0 justify-evenly items-center mx-auto flex-col mt-10 w-screen '>
+                <ul className=' flex mb-0 justify-evenly items-center mx-auto flex-col mt-10 w-screen flex-wrap '>
                                     <Link href= "/" className=' hidden lg:block'>
                                         <Image src = {avocado1} alt="Logo"  className=' h-80 w-60 max-auto' />
                                     </Link>

@@ -3,6 +3,16 @@ import '../../app/globals.css';
 import React from 'react';
 import Link from 'next/link'
 
+
+import Image from 'next/image';
+
+
+import {seedlings1} from "@/public/images/cards/seedlings"
+import {seedlings2} from "@/public/images/cards/seedlings"
+import {seedlings3} from "@/public/images/cards/seedlings"
+import {seedlings4} from "@/public/images/cards/seedlings"
+
+
 const Page = () => {
 
     const backgroundStyles = {
@@ -49,6 +59,24 @@ const Page = () => {
         </div>
         <div className=' h-screen w-screen flex-1 max-lg:hidden' style={backgroundStyles}></div>
       </div>
+      <div className="bg-cover bg-center h-auto text-black flex items-center border-black border-4 mx-1 mt-10 mb-1">
+            
+              <ul className=' flex justify-evenly items-center mx-auto flex-row w-screen my-10 flex-wrap '>
+                                  <Link href= "/">
+                                      <Image src = {seedlings1} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                  </Link>
+                                  <Link href= "/">
+                                      <Image src = {seedlings2} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                  </Link>
+                                  <Link href= "/">
+                                      <Image src = {seedlings3} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                  </Link> 
+                                  <Link href= "/">
+                                      <Image src = {seedlings4} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                  </Link> 
+                      </ul>
+    </div>
+
     </div>
   );
 };

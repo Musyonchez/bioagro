@@ -11,62 +11,7 @@ const page = () => {
   return (
     <div className=' flex flex-col'>
         <Navbar />
-        <div className=' flex flex-col lg:flex-row'>
-            <div className=' flex flex-1 flex-col text-center justify-center items-center'>
-                <div className=' bg-stone-200 w-3/4 h-1/2 my-14'>
-                <h1 className=' text-4xl'>Rich and Creamy Milk</h1>
-                <h4 className=' text-2xl'>Milked to Perfection</h4>
-                </div>
 
-                <div className=' flex justify-center items-center'>
-                    <ul className=''>
-                            {milks.map((mil) => (
-                                <li 
-                                    key={mil.id}
-                                    className=' list-none'
-                                >
-                                    <Link href= {mil.url}>
-                                        <Image src = {mil.img} alt="Logo" className=' h-full w-3/5  mx-auto' />
-                                    </Link> 
-                                    <Link href = {mil.url}>
-                                        <button className="bg-green-500 h-14 w-48 rounded-3xl text-2xl my-3">
-                                            Learn More <span>&rarr;</span>
-                                        </button>
-                                        </Link>
-                                    <h1 className='text-2xl'>{mil.id}</h1>
-                                </li>
-                            ))}
-                        </ul>
-                </div>
-            </div>
-            <div className=' flex flex-1 flex-col text-center justify-center items-center'>
-                <div className=' bg-stone-200 w-3/4 h-1/2 my-14'>
-                <h1 className=' text-4xl'>Seedlings: The Garden's Genesis</h1>
-                <h4 className=' text-2xl'>Where Green Dreams Take Roo</h4>
-                </div>
-
-                <div className='flex justify-center items-center'>
-                    <ul className=''>
-                            {seedlings.map((seed) => (
-                                <li 
-                                    key={seed.id}
-                                    className=' list-none'
-                                >
-                                    <Link href= {seed.url}>
-                                        <Image src = {seed.img} alt="Logo" className=' h-full w-3/5 mx-auto' />
-                                    </Link> 
-                                    <Link href = {seed.url}>
-                                        <button className="bg-green-500 h-14 w-48 rounded-3xl text-2xl my-3">
-                                            Learn More <span>&rarr;</span>
-                                        </button>
-                                        </Link>
-                                    <h1 className='text-2xl'>{seed.id}</h1>
-                                </li>
-                            ))}
-                        </ul>
-                </div>
-            </div>
-        </div>
         <div className=' flex flex-1 flex-col text-center justify-center items-center'>
                 <div className=' bg-stone-200 w-3/4 h-1/2 my-14'>
             <h1 className=' text-4xl'>Deliciouscious Fruits</h1>

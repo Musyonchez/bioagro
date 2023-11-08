@@ -27,7 +27,7 @@ return (
     <Navbar />
     <div className="bg-cover bg-center h-auto text-black flex items-center border-black border-4 mx-1 mt-10 mb-1">
             
-              <ul className=' flex justify-evenly items-center mx-auto flex-row w-screen my-10 '>
+              <ul className=' flex justify-evenly items-center mx-auto flex-row w-screen my-10 flex-wrap '>
                                   <Link href= "/">
                                       <Image src = {milk1} alt="Logo"  className=' h-80 w-60 max-auto' />
                                   </Link>
@@ -66,7 +66,7 @@ return (
       </div>
       <div className="bg-cover bg-center h-auto text-black flex items-center border-black border-4 mx-1 mt-10 mb-1">
             
-            <ul className=' flex justify-evenly items-center mx-auto flex-row w-screen my-10 '>
+            <ul className=' flex justify-evenly items-center mx-auto flex-row w-screen my-10 flex-wrap '>
                                 <Link href= "/">
                                     <Image src = {milk1} alt="Logo"  className=' h-80 w-60 max-auto' />
                                 </Link>
