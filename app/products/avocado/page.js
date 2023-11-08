@@ -29,16 +29,16 @@ const Page = () => {
             
             <ul className=' flex justify-evenly items-center mx-auto flex-row w-screen my-10 flex-wrap'>
                                 <Link href= "/">
-                                    <Image src = {bananas1} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    <Image src = {avocado1} alt="Logo"  className=' h-80 w-60 max-auto' />
                                 </Link>
                                 <Link href= "/">
-                                    <Image src = {bananas2} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    <Image src = {avocado2} alt="Logo"  className=' h-80 w-60 max-auto' />
                                 </Link>
                                 <Link href= "/">
-                                    <Image src = {bananas3} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    <Image src = {avocado3} alt="Logo"  className=' h-80 w-60 max-auto' />
                                 </Link> 
                                 <Link href= "/">
-                                    <Image src = {bananas4} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    <Image src = {avocado4} alt="Logo"  className=' h-80 w-60 max-auto' />
                                 </Link> 
                     </ul>
   </div>
@@ -70,16 +70,16 @@ const Page = () => {
             
             <ul className=' flex justify-evenly items-center mx-auto flex-row w-screen my-10 flex-wrap '>
                                 <Link href= "/">
-                                    <Image src = {bananas1} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    <Image src = {avocado1} alt="Logo"  className=' h-80 w-60 max-auto' />
                                 </Link>
                                 <Link href= "/">
-                                    <Image src = {bananas2} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    <Image src = {avocado2} alt="Logo"  className=' h-80 w-60 max-auto' />
                                 </Link>
                                 <Link href= "/">
-                                    <Image src = {bananas3} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    <Image src = {avocado3} alt="Logo"  className=' h-80 w-60 max-auto' />
                                 </Link> 
                                 <Link href= "/">
-                                    <Image src = {bananas4} alt="Logo"  className=' h-80 w-60 max-auto' />
+                                    <Image src = {avocado4} alt="Logo"  className=' h-80 w-60 max-auto' />
                                 </Link> 
                     </ul>
   </div>
