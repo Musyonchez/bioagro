@@ -47,11 +47,6 @@ const Page = () => {
           <p>
           We invite you to visit Bioagro Solutions and savor the difference that our farm-fresh dairy can make. Come rain or shine, we're here to provide you with the best of dairy delights. Discover the taste of creaminess, sustainability, and wholesome goodness with our dairy collection.          </p>
           <div className="justify-between items-center mx-auto space-x-5">
-              <Link href = "/products">
-              <button className="bg-green-500 h-20 w-60 rounded-3xl text-2xl mb-14">
-                Products <span>&rarr;</span>
-              </button>
-              </Link>
               <Link href = "/contact">
                 <button className=" border-4 border-green-500 bg-white h-20 w-52 rounded-3xl text-2xl">Contact Us</button>
               </Link>

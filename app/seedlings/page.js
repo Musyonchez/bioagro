@@ -47,11 +47,6 @@ const Page = () => {
           <p>
           We invite you to visit Bioagro Solutions and discover the magic of our seedlings. Whether you're an experienced gardener or just starting, our selection has something for everyone. We're here to provide you with the best beginnings for your garden. Watch your garden flourish and be a part of the green future with our seedlings.          </p>
           <div className="justify-between items-center mx-auto space-x-5">
-              <Link href = "/products">
-              <button className="bg-green-500 h-20 w-60 rounded-3xl text-2xl mb-14">
-                Products <span>&rarr;</span>
-              </button>
-              </Link>
               <Link href = "/contact">
                 <button className=" border-4 border-green-500 bg-white h-20 w-52 rounded-3xl text-2xl">Contact Us</button>
               </Link>
